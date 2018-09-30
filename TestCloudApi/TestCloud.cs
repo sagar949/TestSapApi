@@ -26,7 +26,7 @@ namespace TestCloudApi
             HttpResponseMessage response;
 
             // Request body
-            byte[] byteData = Encoding.UTF8.GetBytes(System.IO.File.ReadAllText(@"D:\Test\TestCloudApi\TestCloudApi\body.txt"));
+            byte[] byteData = Encoding.UTF8.GetBytes(System.IO.File.ReadAllText(@".\body.txt"));
 
             using (var content = new ByteArrayContent(byteData))
             {
